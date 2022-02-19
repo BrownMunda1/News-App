@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
     const location = useLocation();
     return (
-        <div>
+        <div className='position-sticky' style={{top:0, zIndex:100}}>
             <nav style={{position: 'sticky'}} className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">News</Link>

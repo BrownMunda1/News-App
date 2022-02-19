@@ -5,7 +5,7 @@ const NewsItem  = (props) => {
     let { title, description, imageUrl, newsUrl, author, date,source } = props;
     return (
       <div className='my-3'>
-        <div className="card" style={{ width: '18rem' }}>
+        <div className="row card">
           <div style={{
             position: 'absolute',
             right: '0'

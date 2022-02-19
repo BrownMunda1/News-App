@@ -70,12 +70,11 @@ const News = (props) => {
                 <InfiniteScroll
                     dataLength={articles.length}
                     next={fetchMoreData}
-                    hasMore={articles.length !== totalResults.length}
-                    loader={<Spinner />}>
+                    hasMore={articles.length !== totalResults.length}>
                     <div className="container">
                         <div className="row">
                             {articles.map((element) => {
-                                return <div className="col md-4" key={element.url}>
+                                return <div className="col-md-4" key={element.url}>
                                     <NewsItem title={element.title ? element.title.slice(0, 30) : ""} description={element.description ? element.description.slice(0, 100) : ""} imageUrl={element.urlToImage} newsUrl={element.url} author={element.author} date={element.publishedAt} source={element.source.name} />
                                 </div>
                             })}
